@@ -22,17 +22,16 @@
  下方内容视图
  */
 @property (nonatomic, strong) FrankPagesView * bottomContentView;
-
+/**
+ 提示视图
+ */
 @property (nonatomic, strong) UILabel * middleLabel;
 
 /**
  顶部偏移高度
  */
 @property (nonatomic, assign) CGFloat topHeight;
-/**
- 是否显示导航栏 YES ：显示，NO：不显示
- */
-//@property (nonatomic, assign) BOOL isShowNavigationBar;
+
 
 @end
 
@@ -54,11 +53,6 @@
 }
 - (CGFloat)topHeight{
     
-//    if (self.isShowNavigationBar) {
-//        
-//        return 64;
-//    }
-//    
     return 0;
 }
 

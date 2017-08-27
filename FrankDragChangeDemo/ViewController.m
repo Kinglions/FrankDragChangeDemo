@@ -44,7 +44,7 @@
         
         CGFloat height = CGRectGetHeight(self.view.frame) - CGRectGetHeight(self.tabbarView.frame) - 64;
         _dropView = [FrankDropBounsView createFrankDropBounsViewWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.frame), height) withDelegate:self];
-        _dropView.needShowAlertView = NO;// 设置是否显示提示文字
+        _dropView.needShowAlertView = YES;// 设置是否显示提示文字
         _dropView.alertTitle = @"这是一个自定义的文字提示";
     }
     

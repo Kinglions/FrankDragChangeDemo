@@ -12,8 +12,6 @@
 
 @interface FrankDropBounsView : UIScrollView
 
-
-
 /**
  是否需要显示提示文字视图
  */
@@ -24,8 +22,13 @@
 @property (nonatomic, strong) NSString * alertTitle;
 
 
-+ (instancetype)createFrankDropBounsViewWithFrame:(CGRect)frame withDelegate:(id<FrankDetailDropDelegate>)delegate;
+/**
+ 创建视图
 
+ @param frame 视图大小
+ @param delegate 设置代理
+ */
++ (instancetype)createFrankDropBounsViewWithFrame:(CGRect)frame withDelegate:(id<FrankDetailDropDelegate>)delegate;
 
 /**
  显示顶部视图

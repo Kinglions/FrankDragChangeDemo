@@ -11,11 +11,13 @@
 
 @interface FrankPagesView : UIView
 
-/**
- 偏移量
- */
-@property (nonatomic, assign) CGPoint contentOffset;
 
+/**
+ 创建视图
+
+ @param frame 大小
+ @param delegate 代理
+ */
 + (instancetype)createFrankPagesViewWithFrame:(CGRect)frame delegate:(id<FrankDetailDropDelegate>)delegate;
 
 @end

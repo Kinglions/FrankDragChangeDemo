@@ -16,15 +16,15 @@
  设置弹出的上部视图
  */
 - (UIView *)frankDropBounsViewResetTopView;
+
 /**
  配置toolbar的名字
 
  @return 返回名字数组
  */
 - (NSArray *)resetToolbarTitles;
-
 /**
- 设置底部视图
+ 配置底部视图
  
  @param index 对应的索引
 
