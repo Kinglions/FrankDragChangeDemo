@@ -134,7 +134,7 @@
 				016E08F71F517FE20093E582 /* AppDelegate.m */,
 				016E08F91F517FE20093E582 /* ViewController.h */,
 				016E08FA1F517FE20093E582 /* ViewController.m */,
-				016E090A1F517FF50093E582 /* 上拉切换效果 */,
+				016E090A1F517FF50093E582 /* FrankDropBounsView */,
 				016E08FC1F517FE20093E582 /* Main.storyboard */,
 				016E08FF1F517FE20093E582 /* Assets.xcassets */,
 				016E09011F517FE20093E582 /* LaunchScreen.storyboard */,
@@ -152,18 +152,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		016E090A1F517FF50093E582 /* 上拉切换效果 */ = {
+		016E090A1F517FF50093E582 /* FrankDropBounsView */ = {
 			isa = PBXGroup;
 			children = (
 				016E090B1F517FF50093E582 /* FrankDropBounsView.h */,
 				016E090C1F517FF50093E582 /* FrankDropBounsView.m */,
 				016E09171F5182840093E582 /* FrankDefineHeader.h */,
-				016E090D1F517FF50093E582 /* 详情下方视图 */,
+				016E090D1F517FF50093E582 /* FrankPagesView */,
 			);
+			name = FrankDropBounsView;
 			path = "上拉切换效果";
 			sourceTree = "<group>";
 		};
-		016E090D1F517FF50093E582 /* 详情下方视图 */ = {
+		016E090D1F517FF50093E582 /* FrankPagesView */ = {
 			isa = PBXGroup;
 			children = (
 				016E090E1F517FF50093E582 /* FrankDetailDropDelegate.h */,
@@ -172,6 +173,7 @@
 				016E090F1F517FF50093E582 /* FrankMiddleToolbar.h */,
 				016E09101F517FF50093E582 /* FrankMiddleToolbar.m */,
 			);
+			name = FrankPagesView;
 			path = "详情下方视图";
 			sourceTree = "<group>";
 		};
@@ -525,6 +527,7 @@
 				016E09091F517FE20093E582 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

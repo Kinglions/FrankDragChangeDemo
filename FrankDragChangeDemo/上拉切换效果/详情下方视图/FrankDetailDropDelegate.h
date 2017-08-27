@@ -11,6 +11,11 @@
 @protocol FrankDetailDropDelegate <NSObject>
 
 @required
+
+/**
+ 设置弹出的上部视图
+ */
+- (UIView *)frankDropBounsViewResetTopView;
 /**
  配置toolbar的名字
 

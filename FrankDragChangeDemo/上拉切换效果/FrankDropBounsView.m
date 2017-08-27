@@ -11,7 +11,7 @@
 
 @interface FrankDropBounsView ()<UIScrollViewDelegate>
 
-@property (nonatomic, strong) id<FrankDropBounsViewDelegate>dropDelegate;
+@property (nonatomic, strong) id<FrankDetailDropDelegate>dropDelegate;
 
 /**
  上方内容视图
@@ -88,7 +88,7 @@
     if (!_topContentView) {
         _topContentView = [[UIView alloc] initWithFrame:CGRectMake(0, self.topHeight, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds)/2)];
         _topContentView.backgroundColor = [UIColor whiteColor];
-        if ([self.dropDelegate respondsToSelector:@selector(FrankDropBounsViewResetTopView)]) {
+        if ([self.dropDelegate respondsToSelector:@selector(frankDropBounsViewResetTopView)]) {
             
             UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(_topContentView.frame) - 30, CGRectGetWidth(self.frame), 30)];
             label.text = self.alertTitle;
@@ -97,7 +97,7 @@
             label.textColor = [UIColor blackColor];
             [_topContentView addSubview:label];
             self.middleLabel = label;
-            UIView * view = [self.dropDelegate FrankDropBounsViewResetTopView];
+            UIView * view = [self.dropDelegate frankDropBounsViewResetTopView];
             
             if (!view) {
                 view = [[UIView alloc] init];

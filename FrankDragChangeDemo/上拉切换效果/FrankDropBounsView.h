@@ -7,19 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FrankDetailDropDelegate.h"
 
-
-@class FrankDropBounsView;
-@protocol FrankDropBounsViewDelegate <NSObject>
-
-@required
-/**
- 设置弹出的上部视图
- */
-- (UIView *)FrankDropBounsViewResetTopView;
-
-
-@end
 
 @interface FrankDropBounsView : UIScrollView
 
@@ -35,11 +24,7 @@
 @property (nonatomic, strong) NSString * alertTitle;
 
 
-
-/* 
- FrankDropBounsViewDelegate,FrankDetailDropDelegate
- */
-+ (instancetype)createFrankDropBounsViewWithFrame:(CGRect)frame withDelegate:(id<FrankDropBounsViewDelegate>)delegate;
++ (instancetype)createFrankDropBounsViewWithFrame:(CGRect)frame withDelegate:(id<FrankDetailDropDelegate>)delegate;
 
 
 /**

@@ -10,7 +10,7 @@
 #import "FrankDefineHeader.h"
 #import "MJRefresh.h"
 
-@interface ViewController ()<FrankDetailDropDelegate,FrankDropBounsViewDelegate>
+@interface ViewController ()<FrankDetailDropDelegate>
 
 @property (nonatomic, strong) FrankDropBounsView * dropView;
 @property (nonatomic, strong) UILabel * tabbarView;
@@ -72,7 +72,7 @@
 /**
  自定义上部展示视图模块 代理方法
  */
-- (UIView *)FrankDropBounsViewResetTopView{
+- (UIView *)frankDropBounsViewResetTopView{
     
     UITableView * view = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     view.backgroundColor = [UIColor redColor];
