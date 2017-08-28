@@ -65,7 +65,7 @@
     // 不需要显示提示文字视图
     if (!needShowAlertView) {
         self.middleLabel.hidden = YES;
-        self.topView.frame = CGRectMake(0, self.topHeight, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame)/2);
+        self.topView.frame = CGRectMake(0, self.topHeight, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
     }
 }
 - (void)setAlertTitle:(NSString *)alertTitle{
