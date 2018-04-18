@@ -27,6 +27,20 @@
     [self.view addSubview:self.tabbarView];
     
 }
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // 消除导航影响
+    [self.dropView viewControllerWillAppear];
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+     // 消除导航影响
+    [self.dropView viewControllerWillDisappear];
+}
+
+
 - (UILabel *)tabbarView{
     
     if (!_tabbarView) {
@@ -98,7 +112,21 @@
     view.backgroundColor = index == 1?[UIColor redColor]:index == 2?[UIColor greenColor]:[UIColor yellowColor];
     view.mj_header = [view headerWithAnimationType:MJRefreshAnimationType_Normal refreshingTarget:self refreshingAction:@selector(pullDownToReloadData:)];
     
+    UIButton * btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [btn setTitle:@"click" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(clickBtn) forControlEvents:UIControlEventTouchUpInside];
+    [view addSubview:btn];
+    
+    
     return view;
 }
 
+- (void)clickBtn {
+    NSLog(@"--- push");
+    UIViewController * controller = [UIViewController new];
+    controller.view.backgroundColor = [UIColor yellowColor];
+    
+    [self.navigationController pushViewController:controller animated:YES];
+    
+}
 @end

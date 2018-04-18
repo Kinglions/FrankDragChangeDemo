@@ -32,6 +32,11 @@
  */
 @property (nonatomic, assign) CGFloat topHeight;
 
+/**
+ 记录当前的视图偏移量
+ */
+@property (nonatomic, assign) CGPoint currentOffset;
+
 
 @end
 
@@ -168,5 +173,14 @@
     }
 }
 
+
+- (void)viewControllerWillAppear {
+    
+    self.contentOffset = self.currentOffset;
+}
+- (void)viewControllerWillDisappear {
+    
+    self.currentOffset = self.contentOffset;
+}
 
 @end

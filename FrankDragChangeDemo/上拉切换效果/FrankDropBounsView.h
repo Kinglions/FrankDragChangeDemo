@@ -40,4 +40,17 @@
  */
 - (void)showBottomPageViewWithCompleteBlock:(void(^)())completeBlock;
 
+
+
+// ------  解决 导航操作对 contentOffset 的影响
+/**
+ 控制器  - (void)viewWillAppear:(BOOL)animated 方法中调用
+ */
+- (void)viewControllerWillAppear;
+/**
+ 控制器  - (void)viewWillDisappear:(BOOL)animated 方法中调用
+ */
+- (void)viewControllerWillDisappear;
+
+
 @end
