@@ -41,10 +41,13 @@
 }
 
 
+#pragma mark 以下是懒加载配置
+#pragma mark ----- 在 iPhone X 下使用，只需要自己在工程中配置响应的适配frame 即可，封装的控件内部逻辑不变
+
 - (UILabel *)tabbarView{
     
     if (!_tabbarView) {
-        _tabbarView = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame) - 50, CGRectGetWidth(self.view.frame), 50)];
+        _tabbarView = [[UILabel alloc] initWithFrame:CGRectMake(0, Screen_height - 50 - Frank_Tabbar_Safe_BottomMargin, Screen_width, 50)];
         _tabbarView.backgroundColor = [UIColor whiteColor];
         _tabbarView.text = @"这里定义操作界面";
         _tabbarView.textAlignment = NSTextAlignmentCenter;
@@ -56,8 +59,8 @@
     
     if (!_dropView) {
         
-        CGFloat height = CGRectGetHeight(self.view.frame) - CGRectGetHeight(self.tabbarView.frame) - 64;
-        _dropView = [FrankDropBounsView createFrankDropBounsViewWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.frame), height) withDelegate:self];
+        CGFloat height = Screen_height - CGRectGetHeight(self.tabbarView.frame) - Frank_StatusAndNavBar_Height - Frank_Tabbar_Safe_BottomMargin;
+        _dropView = [FrankDropBounsView createFrankDropBounsViewWithFrame:CGRectMake(0, Frank_StatusAndNavBar_Height, Screen_width, height) withDelegate:self];
         _dropView.needShowAlertView = YES;// 设置是否显示提示文字
         _dropView.alertTitle = @"这是一个自定义的文字提示";
     }
@@ -65,6 +68,8 @@
     return _dropView;
 }
 
+#pragma mark 以上是懒加载配置
+#pragma mark ----- 在 iPhone X 下使用，只需要自己在工程中配置响应的适配frame 即可，封装的控件内部逻辑不变
 
 - (void)pullDownToReloadData:(MJRefreshNormalHeader *)table{
     NSLog(@"--- 下拉");

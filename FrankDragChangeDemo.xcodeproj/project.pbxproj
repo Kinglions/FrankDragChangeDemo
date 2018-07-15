@@ -36,6 +36,7 @@
 		016E095A1F5182D80093E582 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 016E09441F5182D80093E582 /* UIScrollView+MJExtension.m */; };
 		016E095B1F5182D80093E582 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 016E09461F5182D80093E582 /* UIScrollView+MJRefresh.m */; };
 		016E095C1F5182D80093E582 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 016E09481F5182D80093E582 /* UIView+MJExtension.m */; };
+		659B0D5620FB57E000C3BD10 /* FrankMacroDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B0D5420FB57E000C3BD10 /* FrankMacroDefine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,8 @@
 		016E09461F5182D80093E582 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		016E09471F5182D80093E582 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		016E09481F5182D80093E582 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		659B0D5420FB57E000C3BD10 /* FrankMacroDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrankMacroDefine.m; sourceTree = "<group>"; };
+		659B0D5520FB57E000C3BD10 /* FrankMacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrankMacroDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 		016E090A1F517FF50093E582 /* FrankDropBounsView */ = {
 			isa = PBXGroup;
 			children = (
+				659B0D5520FB57E000C3BD10 /* FrankMacroDefine.h */,
+				659B0D5420FB57E000C3BD10 /* FrankMacroDefine.m */,
 				016E09171F5182840093E582 /* FrankDefineHeader.h */,
 				016E090B1F517FF50093E582 /* FrankDropBounsView.h */,
 				016E090C1F517FF50093E582 /* FrankDropBounsView.m */,
@@ -353,6 +358,7 @@
 				016E09561F5182D80093E582 /* MJRefreshStateHeader.m in Sources */,
 				016E09151F517FF50093E582 /* FrankPagesView.m in Sources */,
 				016E095A1F5182D80093E582 /* UIScrollView+MJExtension.m in Sources */,
+				659B0D5620FB57E000C3BD10 /* FrankMacroDefine.m in Sources */,
 				016E09541F5182D80093E582 /* MJRefreshGifHeader.m in Sources */,
 				016E09521F5182D80093E582 /* MJRefreshBackNormalFooter.m in Sources */,
 				016E08F81F517FE20093E582 /* AppDelegate.m in Sources */,

@@ -9,3 +9,5 @@
 
 #import "FrankDropBounsView.h"
 #import "FrankDetailDropDelegate.h"
+
+#import "FrankMacroDefine.h"
